@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/screenAFragment">
+
+    <action
+        android:id="@+id/toScreenA"
+        app:destination="@+id/screenAFragment"
+        app:launchSingleTop="false"
+        app:popUpTo="@+id/main_nav_graph"
+        app:popUpToInclusive="false" />
+
+    <action
+        android:id="@+id/toScreenB"
+        app:destination="@+id/screenBFragment"
+        app:launchSingleTop="false"
+        app:popUpTo="@+id/main_nav_graph"
+        app:popUpToInclusive="false" />
+
+    <action
+        android:id="@+id/toScreenC"
+        app:destination="@+id/screenCFragment"
+        app:launchSingleTop="false"
+        app:popUpTo="@+id/main_nav_graph"
+        app:popUpToInclusive="false" />
+
+    <action
+        android:id="@+id/toScreenD"
+        app:destination="@+id/screenDFragment"
+        app:launchSingleTop="false"
+        app:popUpTo="@+id/main_nav_graph"
+        app:popUpToInclusive="false" />
+
+    <fragment
+        android:id="@+id/screenAFragment"
+        android:name="com.eihror.navigationtab.screens.ScreenAFragment"
+        android:label="ScreenAFragment"
+        tools:layout="@layout/fragment_screen_a" />
+    <fragment
+        android:id="@+id/screenBFragment"
+        android:name="com.eihror.navigationtab.screens.ScreenBFragment"
+        android:label="ScreenBFragment"
+        tools:layout="@layout/fragment_screen_b" />
+    <fragment
+        android:id="@+id/screenCFragment"
+        android:name="com.eihror.navigationtab.screens.ScreenCFragment"
+        android:label="ScreenCFragment"
+        tools:layout="@layout/fragment_screen_c" />
+    <fragment
+        android:id="@+id/screenDFragment"
+        android:name="com.eihror.navigationtab.screens.ScreenDFragment"
+        android:label="ScreenDFragment"
+        tools:layout="@layout/fragment_screen_d" />
+</navigation>
